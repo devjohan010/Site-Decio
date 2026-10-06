@@ -104,3 +104,165 @@ fecharChat.addEventListener("click", () => {
 });
 
 });						  
+
+// ===============================
+// FOOTER INSTITUCIONAL
+// ===============================
+
+document.addEventListener("DOMContentLoaded", () => {
+    const footerHTML = `
+        <footer class="site-footer">
+
+            <div class="footer-top-decoration"></div>
+
+            <div class="footer-container">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img
+                            src="imagens/logo.png"
+                            alt="Logo da EE Professor Dr. Décio Ferraz Alvim"
+                        >
+                    </a>
+
+                    <p class="footer-description">
+                        EE Professor Dr. Décio Ferraz Alvim,
+                        promovendo educação, conhecimento e oportunidades
+                        para transformar caminhos.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a
+                            href="https://www.instagram.com/decioferrazalvim/"
+                            class="social-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram da escola"
+                        >
+                            IG
+                        </a>
+
+                        <a
+                            href="#"
+                            class="social-link"
+                            aria-label="Facebook da escola"
+                        >
+                            f
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Navegação</h3>
+
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="escola.html">Sobre a escola</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Acesso rápido</h3>
+
+                    <ul>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="contato.html#localizacao">Localização</a></li>
+                        <li><a href="noticias.html">Comunicados</a></li>
+                        <li><a href="agenda.html">Eventos</a></li>
+                        <li><a href="projetos.html">Projetos escolares</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-column footer-contact">
+
+                    <h3>Contato</h3>
+
+                    <a
+                        href="tel:+551129192287"
+                        class="footer-contact-item"
+                    >
+                        <span class="footer-contact-icon">☎</span>
+                        <span>(11) 2919-2287</span>
+                    </a>
+
+                    <a
+                        href="mailto:E003128A@EDUCACAO.SP.GOV.BR"
+                        class="footer-contact-item"
+                    >
+                        <span class="footer-contact-icon">✉</span>
+                        <span>E003128A@EDUCACAO.SP.GOV.BR</span>
+                    </a>
+
+                    <a
+                        href="contato.html"
+                        class="footer-contact-item"
+                    >
+                        <span class="footer-contact-icon">●</span>
+                        <span>Fale com a escola</span>
+                    </a>
+
+                </div>
+
+                <div class="footer-location">
+
+                    <h3>Localização</h3>
+
+                    <div class="footer-map-card">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.47120933109915!2d-46.46281652453689!3d-23.62084815690465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6894bd1ae121%3A0xb67de9dcbb89bdc0!2sEE%20Professor%20Dr.%20Décio%20Ferraz%20Alvim!5e0!3m2!1spt-BR!2sbr!4v1791312503199!5m2!1spt-BR!2sbr"
+                            width="100%"
+                            height="180"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            title="Localização da EE Professor Dr. Décio Ferraz Alvim">
+                        </iframe>
+
+                    </div>
+
+                    <a
+                        href="contato.html#localizacao"
+                        class="footer-location-link"
+                    >
+                        Ver localização →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <div class="footer-bottom-container">
+
+                    <p>
+                        © 2026 EE Professor Dr. Décio Ferraz Alvim.
+                        Todos os direitos reservados.
+                    </p>
+
+                    <p>
+                        Site institucional
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+    `;
+
+    document.body.insertAdjacentHTML("beforeend", footerHTML);
+});
