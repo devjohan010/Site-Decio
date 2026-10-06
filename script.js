@@ -48,34 +48,48 @@ systemTheme.addEventListener("change", (event) => {
 		applyTheme(event.matches ? "dark" : "light");
 	}
 });
+
 document.addEventListener("DOMContentLoaded", () => {
+
 	const chatbotHTML = `
-	  <button id="chatbot-btn" aria-label="abrir assistente">
-	    💬
-	  </button>
+		<button id="chatbot-btn" aria-label="Abrir assistente">
+			💬
+		</button>
 
-	  <div id="chatbot">
-	    <div class="chatbot-header">
-		  <span>Assistente Décio</span>
-		  <button id="fechar-chat>x</button>
+		<div id="chatbot">
+
+			<div class="chatbot-header">
+				<span>🤖 Assistente Décio</span>
+
+				<button id="fechar-chat" aria-label="Fechar assistente">
+					×
+				</button>
+			</div>
+
+			<div id="mensagens">
+				<div class="mensagem bot">
+					Olá! Como posso ajudar?
+				</div>
+			</div>
+
+			<div id="chatbot-input">
+
+				<input
+					type="text"
+					id="mensagem-input"
+					placeholder="Digite sua pergunta..."
+				>
+
+				<button id="enviar-mensagem">
+					Enviar
+				</button>
+
+			</div>
+
 		</div>
+	`;
 
-	<div id="mensagens">
-		  olá! como posso ajudar?
-		</div>
+	document.body.insertAdjacentHTML("beforeend", chatbotHTML);
 
-		<div id="chatbot-input">
-		    <input
-		      type="text
-			  id="mensagem input"
-			  placeholder="Digite sua pergunta"
-		    >
-
-		    <button id="enviar-mensagem">
-		      enviar
-		    </button>
-		</div>
-	</div>
-`;
-document.body.insertAdjacentHTML("beforeend", chatbotHTML)
+});
 		
