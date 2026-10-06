@@ -1037,3 +1037,10 @@ a:focus-visible {
 		animation-iteration-count: 1;
 	}
 }
+#chatbot {
+	display: none;
+}
+
+#chatbot.ativo {
+	display: flex;
+}
