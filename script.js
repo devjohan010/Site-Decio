@@ -104,3 +104,4 @@ fecharChat.addEventListener("click", () => {
 	chatbot.classList.remove("ativo");
 });
 		
+console.log("CHATBOT: script funcionando");
