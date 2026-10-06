@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		<div id="chatbot">
 
 			<div class="chatbot-header">
-				<span>🤖 Assistente Décio</span>
+				<span>🤖 Angel-Assistente</span>
 
 				<button id="fechar-chat" aria-label="Fechar assistente">
 					×
