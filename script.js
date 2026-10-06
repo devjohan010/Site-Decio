@@ -103,5 +103,3 @@ chatbotButton.addEventListener("click", () => {
 fecharChat.addEventListener("click", () => {
 	chatbot.classList.remove("ativo");
 });
-		
-console.log("CHATBOT: script funcionando");
