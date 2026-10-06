@@ -1232,3 +1232,39 @@ a:focus-visible {
         border-radius: 16px;
     }
 }
+/* Chatbot - modo escuro */
+
+body.dark-mode #chatbot {
+    background: #101820;
+    border-color: #263746;
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.45);
+}
+
+body.dark-mode #mensagens {
+    background: #0b1218;
+}
+
+body.dark-mode .mensagem.bot {
+    background: #172431;
+    color: #f1f5f9;
+    border-color: #2b4052;
+}
+
+body.dark-mode #chatbot-input {
+    background: #101820;
+    border-top-color: #263746;
+}
+
+body.dark-mode #mensagem-input {
+    background: #172431;
+    color: #f1f5f9;
+    border-color: #2b4052;
+}
+
+body.dark-mode #mensagem-input::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode #mensagem-input:focus {
+    border-color: var(--blue-500);
+}
