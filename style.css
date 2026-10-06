@@ -1038,9 +1038,9 @@ a:focus-visible {
 	}
 }
 #chatbot {
-	display: none;
+    display: none;
 }
 
 #chatbot.ativo {
-	display: flex;
+    display: flex;
 }
