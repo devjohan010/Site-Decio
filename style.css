@@ -1036,6 +1036,7 @@ a:focus-visible {
 		animation-duration: 0.01ms;
 		animation-iteration-count: 1;
 	}
+}
 #chatbot-btn {
     position: fixed;
     right: 24px;
