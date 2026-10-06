@@ -991,22 +991,21 @@ body {
 }
 
 .footer-location-link {
-    display: inline-block;
-    margin-top: 14px;
-
-    color: #d8aa2e;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer-location-link:hover {
-    color: #ffffff;
+    color: var(--gold-500);
+    transform: translateX(3px);
 }
-
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
