@@ -105,9 +105,6 @@ fecharChat.addEventListener("click", () => {
 
 });						  
 
-// ===============================
-// FOOTER INSTITUCIONAL
-// ===============================
 
 document.addEventListener("DOMContentLoaded", () => {
     const footerHTML = `
@@ -188,10 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <h3>Contato</h3>
 
-                    <a
-                        href="tel:+551129192287"
-                        class="footer-contact-item"
-                    >
+                    <a href="tel:+551129192287" class="footer-contact-item">
                         <span class="footer-contact-icon">☎</span>
                         <span>(11) 2919-2287</span>
                     </a>
@@ -221,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="footer-map-card">
 
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.47120933109915!2d-46.46281652453689!3d-23.62084815690465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6894bd1ae121%3A0xb67de9dcbb89bdc0!2sEE%20Professor%20Dr.%20Décio%20Ferraz%20Alvim!5e0!3m2!1spt-BR!2sbr!4v1791312503199!5m2!1spt-BR!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.47120933109915!2d-46.46281652453689!3d-23.62084815690465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6894bd1ae121%3A0xb67de9dcbb89bdc0!2sEE%20Professor%20Dr.%20D%C3%A9cio%20Ferraz%20Alvim!5e0!3m2!1spt-BR!2sbr!4v1791312503199!5m2!1spt-BR!2sbr"
                             width="100%"
                             height="180"
                             style="border:0;"
