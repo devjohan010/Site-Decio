@@ -91,15 +91,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	document.body.insertAdjacentHTML("beforeend", chatbotHTML);
 
-});
 const chatbotButton = document.querySelector("#chatbot-btn");
 const chatbot = document.querySelector("#chatbot");
 const fecharChat = document.querySelector("#fechar-chat");
 
 chatbotButton.addEventListener("click", () => {
-	chatbot.classList.add("ativo");
+    chatbot.classList.add("ativo");
 });
 
 fecharChat.addEventListener("click", () => {
-	chatbot.classList.remove("ativo");
+    chatbot.classList.remove("ativo");
 });
+
+});						  
