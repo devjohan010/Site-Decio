@@ -1098,8 +1098,6 @@ a:focus-visible {
     display: flex;
 }
 
-/* Cabeçalho */
-
 .chatbot-header {
     display: flex;
     align-items: center;
@@ -1127,8 +1125,6 @@ a:focus-visible {
     cursor: pointer;
 }
 
-/* Mensagens */
-
 #mensagens {
     flex: 1;
 
@@ -1153,20 +1149,22 @@ a:focus-visible {
 }
 
 .mensagem.bot {
-    background: var(--white);
-    color: var(--ink);
+    background: var(--blue-950);
+    color: #f1f5f9;
 
-    border: 1px solid var(--line);
+    border: 1px solid var(--blue-800);
+
+    border-radius: 14px 14px 14px 4px;
 }
 
 .mensagem.usuario {
     margin-left: auto;
 
     background: var(--blue-700);
-    color: var(--white);
-}
+    color: #ffffff;
 
-/* Campo de mensagem */
+    border-radius: 14px 14px 4px 14px;
+}
 
 #chatbot-input {
     display: flex;
@@ -1216,8 +1214,6 @@ a:focus-visible {
 #enviar-mensagem:hover {
     background: var(--blue-800);
 }
-
-/* Celular */
 
 @media (max-width: 600px) {
 
