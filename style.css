@@ -763,16 +763,16 @@ body {
 }
 
 #rodape {
-	padding: 20px;
-	border-top: 1px solid var(--line);
-	background: var(--surface);
-	text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    text-align: center;
 }
 
 #rodape p {
-	margin: 4px 0;
-	color: var(--muted);
-	font-size: 14px;
+    margin: 4px 0;
+    color: var(--muted);
+    font-size: 14px;
 }
 
 #menu a[aria-current="page"] {
