@@ -10,6 +10,7 @@
     <meta name="author" content="EE Professor Dr. Décio Ferraz Alvim" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="noticias.js" defer></script>
     <title>Notícias | EE Professor Dr. Décio Ferraz Alvim</title>
   </head>
   <body>
@@ -31,7 +32,12 @@
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
-    <button id="alternar-tema" type="button" aria-label="Ativar modo escuro" title="Alternar entre modo claro e modo escuro">
+    <button
+      id="alternar-tema"
+      type="button"
+      aria-label="Ativar modo escuro"
+      title="Alternar entre modo claro e modo escuro"
+    >
       <span aria-hidden="true"></span>
     </button>
 
@@ -44,10 +50,14 @@
       </section>
 
       <section id="noticias">
-        <div class="estado-vazio">
-          <span class="icone-estado" aria-hidden="true">📰</span>
-          <h2>Nenhuma notícia publicada</h2>
-          <p>Novas notícias serão exibidas aqui quando estiverem disponíveis.</p>
+        <div id="lista-noticias">
+          <div class="estado-vazio">
+            <span class="icone-estado" aria-hidden="true">📰</span>
+
+            <h2>Carregando notícias...</h2>
+
+            <p>Aguarde enquanto buscamos as últimas informações.</p>
+          </div>
         </div>
       </section>
     </main>

@@ -844,6 +844,13 @@ body {
         transform 0.2s ease;
 }
 
+.social-link img {
+    width: 21px;
+    height: 21px;
+    display: block;
+    object-fit: contain;
+}
+
 .social-link:hover {
     background: #176cb0;
     border-color: #176cb0;
@@ -960,11 +967,11 @@ body {
     width: 100%;
     min-height: 210px;
     overflow: hidden;
+    padding: 0;
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    background: #ffffff;
-    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid var(--line);
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(8, 45, 98, 0.08);
 }
 
 .footer-map-card:hover {
