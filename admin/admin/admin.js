@@ -10,11 +10,6 @@ const formNoticia = document.querySelector("#form-noticia");
 
 const botaoCancelar = document.querySelector("#cancelar-noticia");
 
-
-// =====================================================
-// EDITAR NOTÍCIA
-// =====================================================
-
 async function editarNoticia(id) {
 
     try {
@@ -59,11 +54,6 @@ async function editarNoticia(id) {
     }
 
 }
-
-
-// =====================================================
-// CARREGAR NOTÍCIAS
-// =====================================================
 
 async function carregarNoticias() {
 
@@ -140,11 +130,6 @@ async function carregarNoticias() {
 
 }
 
-
-// =====================================================
-// EXCLUIR NOTÍCIA
-// =====================================================
-
 async function excluirNoticia(id) {
 
     const confirmar = confirm(
@@ -177,11 +162,6 @@ async function excluirNoticia(id) {
 
 }
 
-
-// =====================================================
-// ABRIR FORMULÁRIO DE NOVA NOTÍCIA
-// =====================================================
-
 botaoNovaNoticia.addEventListener("click", () => {
 
     formularioNoticia.hidden = false;
@@ -195,11 +175,6 @@ botaoNovaNoticia.addEventListener("click", () => {
 
 });
 
-
-// =====================================================
-// CANCELAR FORMULÁRIO
-// =====================================================
-
 botaoCancelar.addEventListener("click", () => {
 
     formularioNoticia.hidden = true;
@@ -210,11 +185,6 @@ botaoCancelar.addEventListener("click", () => {
     delete formularioNoticia.dataset.editandoId;
 
 });
-
-
-// =====================================================
-// CRIAR OU EDITAR NOTÍCIA
-// =====================================================
 
 formNoticia.addEventListener("submit", async (event) => {
 
@@ -231,9 +201,6 @@ formNoticia.addEventListener("submit", async (event) => {
 
         let resposta;
 
-        // =============================================
-        // EDITAR
-        // =============================================
 
         if (idEditando) {
 
@@ -254,10 +221,6 @@ formNoticia.addEventListener("submit", async (event) => {
             );
 
         }
-
-        // =============================================
-        // CRIAR
-        // =============================================
 
         else {
 
@@ -304,9 +267,5 @@ formNoticia.addEventListener("submit", async (event) => {
 
 });
 
-
-// =====================================================
-// INICIAR
-// =====================================================
 
 carregarNoticias();
