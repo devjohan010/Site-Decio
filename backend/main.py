@@ -16,16 +16,10 @@ from auth import (
     ADMIN_PASSWORD
 )
 
-
-# Criar tabelas do banco
 Base.metadata.create_all(bind=engine)
 
-
-# Criar aplicação
 app = FastAPI()
 
-
-# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -34,8 +28,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-# Conexão com banco
 def get_db():
     db = SessionLocal()
 
@@ -44,16 +36,12 @@ def get_db():
     finally:
         db.close()
 
-
-# Rota principal
 @app.get("/")
 def root():
     return {
         "message": "Backend do site Décio funcionando!"
     }
 
-
-# Login do administrador
 @app.post("/api/login")
 def login(
     form_data: OAuth2PasswordRequestForm = Depends()
@@ -82,15 +70,10 @@ def login(
         "token_type": "bearer"
     }
 
-
-# Modelo para criação/edição de notícia
 class NoticiaCreate(BaseModel):
     titulo: str
     conteudo: str
 
-
-# Listar notícias
-# Público
 @app.get("/api/noticias")
 def listar_noticias(
     db: Session = Depends(get_db)
@@ -99,9 +82,6 @@ def listar_noticias(
 
     return noticias
 
-
-# Criar notícia
-# Protegido por login
 @app.post("/api/noticias")
 def criar_noticia(
     noticia: NoticiaCreate,
@@ -119,9 +99,6 @@ def criar_noticia(
 
     return nova_noticia
 
-
-# Atualizar notícia
-# Protegido por login
 @app.put("/api/noticias/{noticia_id}")
 def atualizar_noticia(
     noticia_id: int,
@@ -148,9 +125,6 @@ def atualizar_noticia(
 
     return noticia_existente
 
-
-# Excluir notícia
-# Protegido por login
 @app.delete("/api/noticias/{noticia_id}")
 def excluir_noticia(
     noticia_id: int,
